@@ -12,7 +12,7 @@ const beers = [
     id: 2,
     name: "Kronenbourg 1664 Blanc",
     category: "Weissbier",
-    rating: 5,
+    rating: 8,
     comment: "Gammal bekant. God!",
     imageUrl:
       "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/785294/kronenbourg-1664-blanc.jpg",
