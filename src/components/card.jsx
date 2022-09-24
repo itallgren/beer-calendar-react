@@ -9,7 +9,7 @@ const Card = ({ beer }) => {
       <div className="lower-card">
         <h3 className="name">{name}</h3>
         <div className="info">
-          <h4 className="rating">{rating}</h4>
+          <p className="rating">{rating}</p>
           <p className="comment">"{comment}"</p>
         </div>
       </div>
