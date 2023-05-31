@@ -61,6 +61,22 @@ h2, h3, h4, h5, p {
      transition: all 0.1s ease-in-out;
   }
 
+.filter .category {
+    cursor: pointer;
+}
+
+.sort {
+    width: 100%;
+}
+
+.sort h4 {
+    display: inline-block;
+}
+
+.sort #select {
+    display: inline-block;
+}
+
 /* Main börjar */
 main {
     margin: 0 auto 3rem;
@@ -91,14 +107,17 @@ main {
     font-size: 1.2rem;
 }
 
+
 .remove:hover {
-    color: var(--primary)
+    color: var(--primary);
+    cursor: pointer;
+    transform: rotate(10deg);
 }
 
 /* Grid start */
 .grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: flex-start;
