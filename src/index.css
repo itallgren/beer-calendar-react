@@ -6,6 +6,9 @@ body {
     --brown: #6A431F;
     --beige: #D5BAA2;
     overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 200px;
 } 
 
 header {
@@ -37,6 +40,23 @@ h2, h3, h4, h5, p {
     margin: 0;
 }
 
+
+/* Main börjar */
+main {
+    margin: 0 auto 3rem;
+    width: 90vw;
+}
+
+/* Filter start */
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
 .category {
     background-color: var(--primary);
     padding: 5px 10px;
@@ -61,6 +81,11 @@ h2, h3, h4, h5, p {
      transition: all 0.1s ease-in-out;
   }
 
+  .category:focus {
+      outline: solid var(--secondary) 3px;
+      font-size: 0.9rem;
+  }
+
 .filter .category {
     cursor: pointer;
 }
@@ -75,22 +100,6 @@ h2, h3, h4, h5, p {
 
 .sort #select {
     display: inline-block;
-}
-
-/* Main börjar */
-main {
-    margin: 0 auto 3rem;
-    width: 90vw;
-}
-
-/* Filter start */
-.filter {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem auto;
-    flex-wrap: wrap;
-    row-gap: 10px;
 }
 
 .filter h4 {
@@ -112,6 +121,32 @@ main {
     color: var(--primary);
     cursor: pointer;
     transform: rotate(10deg);
+}
+
+.remove:focus {
+    border-radius: 50px;
+    outline: solid var(--primary) 3px;
+}
+
+.sort select {
+    background-color: var(--secondary);
+    padding: 4px 6px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: lowercase;
+    transition: all 0.1s ease-in-out;
+}
+
+.sort select:hover {
+    background-color: var(--primary);
+    color: var(--light);
+    transition: all 0.1s ease-in-out;
+}
+
+.sort select:focus {
+    outline: solid var(--primary) 3px;
 }
 
 /* Grid start */
@@ -200,9 +235,13 @@ img {
 /* Footer start */
 footer {
     background-color: var(--primary);
-    color: var(--secondary);
     padding: 1rem 0 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 150px;
     text-align: center;
+    color: var(--secondary);
 }
 
 .beers-emoji {
